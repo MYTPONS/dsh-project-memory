@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "项目操作记忆",
+    "description": "为每个项目建立 .dsh 记忆：记录、日志、文档与功能清单；支持跨项目建档、关键词/日期检索、git 提交、主存档与自愈恢复（project_archive/restore/forget）。自动定位与加日期，一式两份（项目 .dsh 与主存档），备份进临时目录、默认保留 6 份。",
+    "detail": "docs/DETAIL.md"
+  }
+}

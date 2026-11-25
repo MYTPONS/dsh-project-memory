@@ -1,0 +1,56 @@
+{
+  "name": "dsh-project-memory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH-exclusive per-project memory: records, logs, docs, feature checklist, bounded search, main archive, restore, and explicit forget.",
+  "license": "MIT",
+  "author": "MYTPONS",
+  "homepage": "https://github.com/MYTPONS/dsh-project-memory#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MYTPONS/dsh-project-memory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MYTPONS/dsh-project-memory/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "cordis",
+    "project-memory",
+    "decision-log",
+    "agent-tool",
+    "local-first"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check scripts/privacy_scan.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "leakcheck": "node scripts/privacy_scan.mjs .",
+    "verify": "pnpm check && pnpm test && pnpm leakcheck"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Project memory",
+    "description": "Per-project .dsh memory: records, logs, docs and feature checklist; cross-project archiving, keyword/date search, git commit, authoritative main archive with self-heal (project_archive/restore/forget). Auto-located and dated, mirrored to the main .dsh, backups in a temp dir keeping 6 per file.",
+    "detail": "docs/DETAIL.md"
+  }
+}
